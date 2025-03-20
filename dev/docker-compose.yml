@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: mybankdb
+      POSTGRES_USER: devadmin
+      POSTGRES_PASSWORD: devadmin123pass
+    ports:
+      - "5433:5432"
